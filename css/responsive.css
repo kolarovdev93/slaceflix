@@ -1,0 +1,23 @@
+@media screen and (max-width:700px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .identidade h1{
+        font-size: 28px;
+    }
+
+    main .container .titulo{
+        font-size: 45px;
+    }
+
+    main .container .descricao{
+        font-size: 16px;
+    }
+
+    .item-food{
+        width: 70%;
+        height: 70%;
+    }
+}

@@ -1,0 +1,128 @@
+:root{
+    --laranja: rgb(241, 172, 43);
+    --preto: rgb(36, 33, 33);
+    --verde: rgb(3, 94, 3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--preto);
+}
+
+.identidade h1{
+    font-size: 35px;
+    color: var(--laranja);
+    letter-spacing: 3px;
+    margin-left: 8%;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    margin-right: 4%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+
+header nav a:hover{
+    color:rgb(241, 172, 43);
+    border-bottom: 2px solid rgb(241, 172, 43);
+    transition: 2s ease-in-out;
+}
+
+
+main{
+    background: url('../img/food.jpg') no-repeat;
+    background-size: cover;
+    overflow: hsla(0, 0%, 0%, 0.8);
+    height: 590px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+main .container .titulo{
+    color:rgb(241, 172, 43);
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+main .container .descricao{
+    margin-top: 10px;
+    line-height: 2rem;
+    font-size: 20px;
+    color: white;
+}
+
+main .botoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+main .botoes button{
+    cursor: pointer;
+    padding: 15px 40px;
+    border-radius: 45px;
+    border: none;
+    margin-left: 15px;
+}
+
+main .botoes button:nth-child(1){
+    color: white;
+    background-color: var(--laranja);
+}
+
+main .botoes button:nth-child(1):hover{
+    color: white;
+    background-color: var(--preto);
+}
+
+main .botoes button:nth-child(2){
+    background-color: white;
+}
+
+main .botoes button:nth-child(2):hover{
+    background-color: rgb(7, 109, 7);
+    color: white;
+}
+
+.carousel-food{
+    margin-top: 10px;
+}
+
+.item-food{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
